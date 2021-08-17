@@ -1,0 +1,23 @@
+SELECT * from moviedata WHERE moviedata.movie_name = "Van Gogh";
+
+SELECT * from moviedata WHERE moviedata.movie_name <> "Van Gogh";
+
+
+SELECT * from moviedata WHERE moviedata.budget >= 15000;
+
+SELECT * FROM moviedata WHERE moviedata.budget <=15000;
+
+
+SELECT * FROM moviedata WHERE moviedata.budget > 10000 AND moviedata.production_year >2000;
+
+SELECT * FROM moviedata WHERE moviedata.budget > 10000 OR moviedata.production_year >2000;
+
+SELECT * FROM moviedata WHERE moviedata.budget < 10000 AND moviedata.production_year < 2000;
+
+SELECT * FROM moviedata WHERE moviedata.budget !=10000 OR moviedata.production_year !=2000;
+
+SELECT * FROM moviedata WHERE moviedata.production_year BETWEEN 2000 AND 2010;
+
+SELECT * FROM moviedata ORDER BY moviedata.production_year DESC , moviedata.movie_name ASC;
+
+SELECT * FROM moviedata WHERE moviedata.id > 10 AND moviedata.id <= 10+5 ORDER BY moviedata.production_year DESC , moviedata.movie_name ASC;
